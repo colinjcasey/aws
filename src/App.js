@@ -25,7 +25,7 @@ function App() {
     axios
       .post("https://api.openai.com/v1/chat/completions", requestData, {
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: "Bearer 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",
           "Content-Type": "application/json",
         },
       })
@@ -164,7 +164,7 @@ function App() {
         <div className="card-content" style={styles.overflow}>
           <header className="center-align" style={styles.centerAlign}>
             <h2 className="font-semibold text-white">
-              PrivvyGPT -  The Ultamate Assistant
+              ColinGPT -  The Ultamate Assistant
             </h2>
           </header>
           <div
@@ -177,7 +177,7 @@ function App() {
     {message.role === "user" ? (
       <div >
       <p className="user-message" style={styles.userName}>
-        Colin:
+        User:
       </p>
       <p className="user-message" style={styles.userMessage}>
          {message.content}
@@ -186,7 +186,7 @@ function App() {
     ) : (
       <div>
         <p className="bot-message" style={styles.botName}>
-          PrivvyGPT:
+          ColinGPT:
         </p>
         <pre className="bot-message" style={styles.botMessage}>
           {message.content}
@@ -198,7 +198,7 @@ function App() {
 
             {isProcessing && (
               <p className="bot-message" style={styles.botMessagePre}>
-                PrivvyGPT is processing your question...
+                ColinGPT is processing your question...
               </p>
             )}
           </div>
